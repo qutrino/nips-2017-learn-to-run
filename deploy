@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for target in aws01 aws02 aws03 aws04 aws05
+do
+	echo scp /home/qutrino/mlworkspace/nips-2017-learn-to-run/*.py qutrino@${target}:/home/qutrino/mlworkspace/nips-2017-learn-to-run/
+	scp /home/qutrino/mlworkspace/nips-2017-learn-to-run/*.py qutrino@${target}:/home/qutrino/mlworkspace/nips-2017-learn-to-run/
+done
